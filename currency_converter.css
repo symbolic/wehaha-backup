@@ -1,0 +1,160 @@
+
+/*.Wfll {
+	width: 250px; testing only TODO remove
+}*/
+
+#ifc_widgetcurrconv {
+                    	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+        border-right: 1px solid #90969e;
+        border-left: 1px solid #90969e;
+        overflow: hidden;
+            font-family: Arial;
+}
+#ifc_widgetcurrconv {
+    direction: ltr !important;
+}
+#ifc_widgetcurrconv .ifc_cc_body {
+    direction: ltr !important;
+}
+#ifc_widgetcurrconv .ifc_cc_body * {
+    direction: ltr !important;
+}
+.ifc_cc_head {
+	width:100%;
+	height: 48px; 
+        color: white;
+        font-size: 14px;
+        
+        	background-image: -moz-linear-gradient(bottom, #449953, #126320);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#126320), to(#449953));
+    background-image: -webkit-linear-gradient(bottom, #449953, #126320);
+    background-image: -o-linear-gradient(bottom, #449953, #126320);
+    background-image: linear-gradient(to top, #449953, #126320);
+    background-repeat: repeat-x;    
+}
+.ifc_cc_head img {
+    margin: 8px 5px 6px 18px;
+    float: left;
+}
+.ifc_cc_head p {
+    display: inline-block;
+    padding: 0;
+    margin: 13px 5px 5px 5px;
+    font-size: 17px;
+    color: #FAFAFA;
+    font-weight: bold;
+    text-indent: 0px
+}
+.ifc_cc_body {
+	width: 100%;
+        padding: 2px 5px;
+        overflow: hidden;
+}
+.ifc_cc_body select {
+        background-color: #FFFFFF;
+        border-color: #abadb3 #dbdfe6 #dbdfe6 #dbdfe6;
+        border-style: solid;
+        border-width: 1px;
+	margin: 5px 0 0px 0;
+        width: 100px;
+           border-radius: 0;
+           background-color:  white;
+}
+.ifc_cc_body input {
+        background-color: #FFFFFF;
+        border-color: #abadb3 #dbdfe6 #dbdfe6 #dbdfe6;
+        border-style: solid;
+        border-width: 1px;
+    width: 100px;
+               border-radius: 0;
+           background-color:  white;
+}
+.ifc_cc_body label {
+    font-size: 12px;
+}
+.ifc_cc_body .currname_cc {
+    margin: 1px 0px 10px 0px;
+    font-size: 8px;
+}
+.ifc_cc_body_left, .ifc_cc_switch_button, .ifc_cc_body_right  {
+	float:left;
+                overflow: hidden;
+                margin-left: 2px;
+}
+.ifc_cc_body_left, .ifc_cc_body_right  {
+    width: 110px;
+}
+.ifc_cc_body_right {
+    padding-left: 2px;
+}
+.footer_cc {
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-bottom: 4px;
+    overflow: hidden;
+}
+.footer_cc img {
+    float: left;
+}
+.date_time_cc {
+    margin: 0 0 0 5px;
+    color: grey;
+    float: left;
+    font-size: 9px;
+        padding-top: 3px;
+}
+.ifc_cc_switch_button {
+	width: 16px;
+	height: 41px;
+	background-image:url('cc_switch.png')/*tpa=http://www.ifcmarkets.com/images/widget/cc_switch.png*/;
+                    background-repeat: no-repeat;
+                    margin-top: 16px;
+                    margin-left: -4px;
+}
+.ifc_cc_switch_button:hover {
+    background-image:url('cc_switch_hover.png')/*tpa=http://www.ifcmarkets.com/images/widget/cc_switch_hover.png*/;
+}
+.ifc_cc_body .currency_symbol {
+    width: 25px;
+    height: 20px;
+    float: left;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    display: none; /*new addition*/
+}
+
+/*-------FOOTER------------*/
+#ifc_nedcurrconv, .ifc_nedcurrconv{
+    overflow:hidden;
+                	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    text-align: right;
+    border-top: solid 1px #90969e;	
+	border-right: solid 1px #90969e;	
+        border-left: solid 1px #90969e;
+        border-bottom: solid 1px #90969e;
+	background-color: #126320;               
+        font-size: 10px; 
+        color:#9ba69d;
+            width: 100%;
+}
+
+#ifc_nedcurrconv a, .ifc_nedcurrconv a {
+	margin-right:5px;
+        color:#fafafa;
+}
+
+#ifc_nedcurrconv p, .ifc_nedcurrconv p{
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+/*------*/
+.clear {
+	clear:both;
+}
+

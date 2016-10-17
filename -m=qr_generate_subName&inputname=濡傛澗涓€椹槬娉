@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<title>搜狐公众平台</title>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/pages/login20141030.js?v=6"></script>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/passport-2.0.0.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/regtool.js?v=20160223" charset="utf-8"></script>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/plugins/bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="http://www.sohu.com/upload/mps0/js/reg/login.js?v=20160128" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="http://www.sohu.com/upload/mps0/asset/index/layout.css">
+<link rel="stylesheet" type="text/css" href="http://www.sohu.com/upload/mps0/asset/index/login.css">
+<link rel="stylesheet" type="text/css" href="http://www.sohu.com/upload/mps0/asset/reg.css?v=20160223">
+</head>
+<body class="login-bg">
+<div class="global-bg">
+  <div class="header">
+  <div class="nav middle960">
+    <div class="nav-right">
+      <span class="login-btn">第一次使用公众平台？<a href="/web/reg">立即注册</a></span>
+    </div>
+    <a class="logo" href="http://mp.sohu.com"><b>搜狐公众平台</b></a>
+  </div>
+</div>
+
+  <div class="content middle1000">
+	<div class="login-box">
+      <div class="slider" >
+        <ul class="bxslider">
+          <li style="height:360px;padding-top:50px"><img src="http://www.sohu.com/upload/mps0/asset/index/img_slider_01.png" /></li>
+          <li style="height:360px;padding-top:50px"><img src="http://www.sohu.com/upload/mps0/asset/index/img_slider_02.png" /></li>
+          <li style="height:360px;padding-top:50px"><img src="http://www.sohu.com/upload/mps0/asset/index/img_slider_03.png" /></li> 
+        </ul>
+        <div id="bxslider-num" class="bxslider-num">
+          <a data-slide-index="0" href=""></a>
+          <a data-slide-index="1" href=""></a>
+          <a data-slide-index="2" href=""></a>
+        </div>
+      </div>
+	    
+     <form class="login-link" >
+      
+        <div class="login-nav"><span class="active">普通登录</span><span>手机动态码登录</span></div>
+        <div class="login-navbox">
+          
+		    <li class="on">
+				<img src="http://www.sohu.com/upload/mps0/asset/regimages/icon_user.gif" width="23" height="23" />
+				<input type="text" class="text1" id="userid" placeholder="请输入邮箱/手机号" />
+				<em class="tishi" id="mailtip" style="visibility:hidden;cursor:pointer;"><font class="font_12 wrong"  id="fontStatue">手机号码格式不正确</font></em>
+			</li>
+			<li style="margin-top:18px;" class="on">
+				<img src="http://www.sohu.com/upload/mps0/asset/regimages/icon_password.gif" width="23" height="23" />
+				<input type="password" class="text1" id="pwd" placeholder="请输入密码" />
+				
+			</li>
+			<div style="margin-top:18px;display:none;" id="checkPic"class="on">
+				<input type="text" class="text" name="imgCaptcha" id="imgCaptcha" value="" style="width:inherit;" placeholder="请输入验证码">
+				<img id="picCaptcha"src="https://passport.sohu.com/apiv2/picture_captcha?userid=userid" style="padding-left:10px;vertical-align:bottom;" onclick="changeCaptcha();">
+			</div>		
+				
+			
+          <div class="login-wjmm"><input type="checkbox" id="remember"  style="float:left;margin-top:16px;padding-top:0;width:14px;height:14px;"><label for="checkbox" style="padding-left:12px;color:#666;float:left;">下次自动登录</label><a class="login-rt" href="https://passport.sohu.com/forget_password/input_user">忘记密码?</a></div>
+          <a href="javascript:void(0);"  class="link2 login_button" id="loginbutton" onclick="login()">登录</a>
+          <div class="login-more"><a style="float:left; cursor:text;">第三方登录</a><a href="https://passport.sohu.com/openlogin/request.action?provider=qq&appid=1138&ru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1" class="login-qq"></a><a href="https://passport.sohu.com/openlogin/request.action?provider=sina&amp;appid=1138&amp;ru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1" class="login-sina"></a><a href="http://plus.sohu.com/spassport/bind/40000001/wechat?ru=http://mp.sohu.com" class="login-weixin"></a><a class="login-rt" href="https://passport.sohu.com/user/tologin?bru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1">更多&gt;</a></div>
+        </div>
+        <div class="login-navbox" style="display:none">
+           <li class="on" style="padding:5px; height:30px;">
+			<img src="http://www.sohu.com/upload/mps0/asset/regimages/icon_phonenum.gif" width="26" height="32" />
+			<input type="text" class="text1" id="phone" name="phone" placeholder="请输入手机号" maxlength="11" />
+			<em class="tishi" id="phonetip" style="visibility:hidden;cursor:pointer;"><font class="font_12 wrong"  id="fontStatue">手机号码格式不正确</font></em>
+		</li>
+		<li style="margin-top:18px;">
+			<img src="http://www.sohu.com/upload/mps0/asset/regimages/icon_password.gif" width="23" height="23" />
+			<input type="text" class="text1" id="captcha" name="captcha" placeholder="请输入验证码" maxlength="6" />
+			
+			<a href="javascript:void(0);" class="get_code" id="sendSMS" onclick="showCaptcha('phone')">获取验证码</a>
+		</li>
+          <div class="login-wjmm"><input type="checkbox" id="remember2"  style="float:left;margin-top:16px;padding-top:0;width:14px;height:14px;"><label for="checkbox01" style="padding-left:12px;color:#666;float:left;">下次自动登录</label><a class="login-rt" href="https://passport.sohu.com/forget_password/input_user">忘记密码?</a>
+		  </div>
+           <a href="javascript:void(0);" class="link2 login_button"  onclick="loginByPhone();">登录</a>
+          <div class="login-more">
+		  <a style="float:left; cursor:text;">第三方登录</a><a href="https://passport.sohu.com/openlogin/request.action?provider=qq&appid=1138&ru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1" class="login-qq"></a><a href="https://passport.sohu.com/openlogin/request.action?provider=sina&amp;appid=1138&amp;ru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1" class="login-sina"></a><a href="http://plus.sohu.com/spassport/bind/40000001/wechat?ru=http://mp.sohu.com" class="login-weixin"></a><a class="login-rt" href="https://passport.sohu.com/user/tologin?bru=http%3A%2F%2Fmp.sohu.com%2F%3Ftip%3D1">更多&gt;</a>
+		  </div>
+        </div>
+   	  </form>
+	  </div>
+
+    <div class="cube login-row">
+      <div class="login-btns clear">
+		<div class="login-media" style="margin-left:20px;">
+			<h4><span class="mode-media"></span>个人</h4>
+			<p>面向个人，提供以文字、图片创作为主的内容管理、互动平台、寻找自己的用户，打造自己的品牌。</p>
+		</div>
+		<div class="login-we-media">
+			<h4><span class="mode-we-media"></span>媒体</h4>
+			<p>面向报纸，杂志，广播电视台，电台，互联网等媒体开放内容发布平台，共享亿万移动用户。</p>
+		</div>
+		<div class="login-company">
+			<h4><span class="mode-company"></span>企业/机构</h4>
+			<p>面向企业、机构、以及其他提供内容或服务的组织申请共享海量流量资源，扩大自身品牌影响力。</p>
+		</div>
+		<div class="login-gov">
+			<h4 style="padding-top:2px;"><span class="mode-gov"></span>政府</h4>
+			<p>政务公开：面向国家各省市区的各级党政机关，为扩大政务信息公开而打造的政务平台。</p>
+		</div>
+	  </div>
+
+	  <h1>成功入驻</h1>
+	<div class="login-join">
+        <div id="slider-prev"><!-- <a href="" class="bx-prev">&lt;</a> --></div>
+        <div id="carousels-box">
+          <div class="bx-wrapper" style="max-width: 861px; margin: 0px auto;">
+          	<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 160px;">
+          		<div class="carousels" style="width: 2215%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+          		</div>
+          	</div>
+          	<div class="bx-controls"></div>
+          </div>
+        </div>
+        <div id="slider-next"><!-- <a href="" class="bx-next"></a> --></div>
+        <div class="slide-description"></div>
+      </div>
+	  
+    </div>
+	
+  
+  </div>
+  <div class="footer">
+    <p>联系邮箱：sohump@sohu-inc.com</p>
+                <a href="http://mp.sohu.com/main/help/pingtaijieshao.action" style="margin:0 8px;" target="_blank" >关于我们</a>
+				|<a href="http://mp.sohu.com/main/help/zhuceguifan.action" style="margin:0 8px;" target="_blank" >运营规范</a>
+				|<a href="/web/agreement" style="margin:0 8px;" target="_blank" >服务协议</a>
+				|<a href="/main/help/appeal.action" style="margin:0 8px;" target="_blank" >侵权投诉</a>
+				|<a href="/main/help/contact.action" style="margin:0 8px;padding-right:22px" target="_blank" >联系方式</a>Copyright 2015 Sohu.com Inc. All Right Reserved 
+  </div>
+</div> 
+<div class="question"><a href="http://quan.sohu.com/q/545b14d668a5ea4c6ab595eb" target="_blank">问题反馈</a></div>
+<script type="text/javascript" src="http://a1.itc.cn/pv/js/spv.1309051632.js"></script>
+<script>
+$(document).ready(function() {
+	$(".login-nav span").click(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".login-navbox").eq($(".login-nav span").index(this)).show().siblings(".login-navbox").hide();
+	});
+	
+	
+	$(".login-link .input_txt").each(function(){
+	 
+		
+	   //聚焦型输入框验证
+	   
+	   $(this).focus(function(){
+		 $(this).addClass("active");
+		}).keyup(function(){
+		}).blur(function(){
+		  var val=$(this).val();
+		  $(this).removeClass("active");
+		 
+		 
+		});
+    })
+		
+	})
+	var userid = $('#userid');
+	var pwd = $('#pwd');
+	var rem = $("#remember");
+</script>
+<div class="mp-modal mp-confirm-box" style='display:none' id="img-captcha-layer">
+     <div class="mp-modal-title">
+         <a href="javascript:$('#img-captcha-layer').hide();" class="mp-btn-close">×</a>
+     </div>
+     <div class="mp-modal-content mp-tabs-box">
+         <div class="mp-control-group mp-code">
+             <span class="mp-pull-right">
+                 <a href="javascript:reloadCaptcha('phone');" class="mp-auth">
+                     <img src="" id="img-captcha"></a>
+             </span>
+             <label>
+                 <span class="mp-ipt">
+                     <input type="mp-text" placeholder="请输入验证码" id="img-captcha-input"></span>
+             </label>
+         </div>
+         <div class="mp-alert-block mp-txt-alert" id="img-captcha-error"></div>
+         <div class="mp-btn-group">
+             <input type="button" value="确认" class="mp-btn" onclick="sendSMSWithCaptcha(2,'phone','2')"></div>
+     </div>
+ </div>
+</body>
+</html>

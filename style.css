@@ -1,0 +1,283 @@
+#pm-wrapper {
+    margin: 5px;
+    position: relative;
+}
+#pm-wrapper a:hover {
+    border-bottom: medium none;
+}
+#pm-wrapper p {
+    text-indent: 0;
+}
+#pm-header {
+    color: #666666;
+    line-height: 20px;
+    margin: 3px;
+    padding: 0;
+}
+#pm-menu {
+    border-bottom: 1px solid #EEEEEE;
+    margin: 15px 0;
+    padding: 4px 0;
+    width: 100%;
+}
+#pm-menu a {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F8F8F8;
+    border-color: #EEEEEE #EEEEEE -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    margin-right: -1px;
+    padding: 8px 15px;
+}
+#pm-menu a.current {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #28B779;
+    padding-bottom: 9px;
+}
+#pm-notify {
+    background: none repeat scroll 0 0 #FFFCEF;
+    border: 1px solid #FFBB76;
+    border-radius: 2px 2px 2px 2px;
+    color: #DB7C22;
+    font-size: 14px;
+    padding: 3px 10px;
+}
+#pm-content {
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+}
+#pm-content p, #pm-content form {
+    margin: 5px;
+}
+#pm-content hr {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#pm-content .pmtext p {
+    margin-left: 0;
+}
+#pm-content textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px 2px 2px 2px;
+    height: 200px;
+    padding: 5px;
+    width: 80%;
+}
+#pm-content input[type="text"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 2px 2px 2px 2px;
+    padding: 5px;
+    width: 50%;
+}
+#pm-content input[type="submit"] {
+    background: none repeat scroll 0 0 #1BA1E2;
+    border: medium none;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Open Sans","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Arial,Verdana,Tahoma,sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    min-width: 100px;
+    padding: 8px 15px;
+}
+#pm-content input[type="submit"]:hover {
+    background: none repeat scroll 0 0 #9B59B6;
+}
+#pm-content table {
+    border: 0 none;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+#pm-content th, #pm-content td {
+    border: 1px solid #E1E1E1;
+    line-height: 20px;
+    padding: 5px 1%;
+    vertical-align: top;
+    white-space: pre-line;
+}
+#pm-content th {
+    color: #888888;
+}
+#pm-content .trodd0 {
+}
+#pm-content .trodd1 {
+    background-color: #F8F8F8;
+}
+#pm-content img {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-width: 400px;
+}
+#pm-content td.pm-sender {
+    line-height: 20px;
+    text-align: center;
+}
+#pm-content td.pm-sender .avatar {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 30px 30px 30px 30px;
+    margin: 5px;
+}
+#pm-content a {
+    color: #28B779;
+}
+#pm-content a.pm-delete {
+    color: #E82C0C;
+}
+#pm-content a:visited {
+    color: #888888;
+}
+#pm-content a:hover {
+    color: #FF7200;
+    text-decoration: underline;
+}
+#pm-content small {
+    color: #999999;
+    font-size: 12px;
+    padding: 0;
+}
+#pm-content blockquote {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #666666;
+    color: #666666;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 90%;
+}
+#pm-content hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    height: 0;
+}
+pre.code {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    font-size: 95%;
+    overflow: auto;
+    padding: 5px;
+    white-space: pre-wrap;
+    width: 90%;
+}
+#pm-footer {
+    border: 1px solid #666666;
+    color: #666666;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+}
+#pm-footer a, #pm-footer a:hover, #pm-footer a:visited {
+    color: #666666;
+    text-decoration: underline;
+}
+#results {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #666666;
+    display: none;
+    position: absolute;
+    width: 250px;
+}
+#results ul, #results li {
+    border: 0 none;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#results li {
+    border-top: 1px solid #666666;
+}
+#results li a {
+    color: #666666;
+    display: block;
+    font-weight: normal;
+    padding: 5px;
+    text-decoration: none;
+}
+#results li a:hover {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+}
+.widget .myCRED-rank { float:right; }.widget .myCRED-rank span { padding-right:4px; color:gray; }.widget .myCRED-balance { display:block; margin-bottom:24px; text-align:center; font-size:larger; }.widget .myCRED-leaderboard .cred { float:right; }.widget .myCRED-leaderboard .first-item { font-size:110%; }.widget .myCRED-history { padding:0; margin:0; list-style-type:none; }.widget .myCRED-history .creds { float:right; padding: 0 0 0 12px; clear:left; }
+
+/**评论**/
+/* 评论框相关属性 */
+#comments .plkglt .plkgltbogy .msgname{display: inline;}
+#comments h5 {font-size: 1.125em;font-weight: normal;line-height: 50px;margin-bottom: -14px;margin-top: -14px;}
+#comments{margin-top: 15px; padding-bottom:10px;}
+#comments h3,#comments h4{font-size: 1.125em;line-height: 30px;font-weight: normal;}
+#read h3 #comment h4 span{float:right;}
+#read ul li a{float:left;}
+#frmSumbit #inpName,#frmSumbit #inpEmail,#frmSumbit #inpHomePage,#frmSumbit #inpVerify{padding-left: 5px;border: 1px solid #ddd;height: 30px;padding-top: 0px;padding-right: 5%;padding-bottom: 0px;line-height: 30px;float: left;margin-right: 10px;margin-top: 0px;margin-bottom: 0px;margin-left: 0px;width: 42%;}
+.commentpost label{height:30px;overflow:hidden;float:left;line-height:30px;margin:0px;padding-top: 0px;padding-right: 10px;padding-bottom: 0px;padding-left: 10px;border-top-width: 1px;border-right-width: 0;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;border-top-color: #dddddd;border-right-color: #dddddd;border-bottom-color: #dddddd;border-left-color: #dddddd;clear: left;}
+#txaArticle{width:99.9%;height:120px;border:1px solid #ddd;padding:2%;}
+#frmSumbit p{padding:0px;margin-top: 0px;margin-right: 0px;margin-bottom: 5px;margin-left: 0px;line-height: 30px;}
+#frmSumbit .button{color: #FFFFFF;background-color: #000;height: 30px;width: 100px;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px;border-left-width: 0px;margin-right: 15px;border-radius: 3px;}
+.plk .msgarticle .plk .msgname .dot{font-size: 1.875em;float: right;margin-left: 15px;font-weight: 700;color: rgba(176, 176, 176, 0);}
+.msgname .dot{font-size: 1.875em;color: rgba(176, 176, 176, 0.66);float: right;margin-left: 15px;font-weight: 700;}
+.plk .plkimg{clear: left;float: left;margin-right: 15px;padding: 2px;}
+.plkglt .msgarticle{line-height: 16px;padding-top: 4px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;font-size: 1em;}
+#comments .plk{font-size: 1em;border: 1px solid #dddddd;margin-top: 15px;padding: 9px;}
+.plk .msgarticle{line-height: 20px;color: #666666;font-size: 1em;}
+.plk .msgarticle .plk{background-color:#f4f4f4;border: 1px solid #eeeeee;font-size: 1em;}
+/*日历*/
+.widget_divCalendar_inner{overflow: hidden;padding:2px;}
+.widget_divCalendar_inner table{width:100%;}
+.widget_divCalendar_inner caption{margin-bottom: 5px;font-size: 14px;}
+.widget_divCalendar_inner caption a{padding:0 20px;color:#555555;}
+.widget_divCalendar_inner th{text-align: center;background-color:#fbfbfb;color: #555555;text-transform: uppercase;border:1px solid #E0E1E2;height:26px}
+.widget_divCalendar_inner td{text-align: center;border:1px solid #E0E1E2;height:30px;width: 47px;}
+.widget_divCalendar_inner td.pad{background:none}
+/*兼容蓝叶下载样式插件*/
+.newfujian {min-height:65px;}
+/*首页二字*/
+#nvabar-item-index a{ color:#fff;}
+/*下拉遮挡修复*/
+.pull-left{ position:relative;z-index:19999;}
+/***/
+.topnavwith{ width:700px; height:25px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/******页码*****/
+/* 
+ * pagination
+ * ====================================================
+*/
+.pagination{ float:left;margin:20px 0 20px 0;background-color:#fff;text-align:center}
+.pagination ul{display:inline-block;*display:inline;*zoom:1;margin-left:0;margin-bottom:0;padding: 0}
+.pagination ul > li{display:inline}
+.pagination ul > li > a,.pagination ul > li > span{margin:0 5px;float:left;padding:8px 20px 7px;text-decoration:none;background-color:#f3f5f9;color:#666;opacity: .88}
+.pagination-multi ul > li > a,.pagination-multi ul > li > span{padding:7px 16px;margin:0 2px;font-size: 12px;}
+.pagination ul > li > a:hover,.pagination ul > li > a:focus{opacity: 1}
+.pagination ul > .active > a,.pagination ul > .active > span{background-color:#000;color:#fff}
+.pagination ul > .active > a,.pagination ul > .active > span{cursor:default}
+.pagination ul > li > span,.pagination ul > .disabled > span,.pagination ul > .disabled > a,.pagination ul > .disabled > a:hover,.pagination ul > .disabled > a:focus{color:#999999;background-color:transparent;cursor:default}
+.pagination ul > li.next-page > a{background-color: #FF5E52;color: #fff;}
+
+.ias_trigger{margin: 20px 0;}
+.ias_trigger a{background-color: #eee;display: block;line-height: 35px;text-align: center;font-size: 14px;color: #999;}
+.ias_trigger a:hover{background-color: #ddd;color: #666;}
+
+.pagination-loading{font-size: 16px;text-align: center;color: #999;padding: 30px 0 40px;}
+.pagination-loading .glyphicon{top: 2px}
+
+.pagenav{overflow:hidden;text-align:center;padding:20px}
+.pagenav a,.pagenav .current,.pagenav .page-numbers{padding:4px 12px 3px;color:#666;display:inline-block;background-color:#eee;margin:0 1px}
+.pagenav .current{background-color:#FF5E52;color:#fff}
+.pagenav a:hover{background-color:#ccc;color:#444}
