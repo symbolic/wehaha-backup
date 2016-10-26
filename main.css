@@ -1,0 +1,51 @@
+/*by lanyes.org 蓝叶*/ 
+#divCommentPost{position:relative}
+#divCommentPost p{margin:0;}
+#divCommentPost p.posttop{font-family:"Microsoft JhengHei","Microsoft Yahei",Arial;font-size:16px;color:#666;border-bottom:1px solid #ddd;padding-bottom:10px}
+#frmSumbit{margin-top:10px}
+.textarea{border:1px solid #ddd;padding-right:20px;border-top-left-radius:4px;border-top-right-radius:4px;background: #fff url(bg_sprites.png)/*tpa=http://www.wehaha.com/zb_users/plugin/lanyecommpost/images/bg_sprites.png*/ 0 -91px repeat-x;}
+.textarea #txaArticle{width:100%;height:80px;outline:none;padding:10px;resize:none;background:transparent;color:#999;border:0; position:inherit;box-shadow:0}
+.textarea #txaArticle:focus{color:#333;}
+#cancel-reply{float:none;margin:0;padding:0;}
+.comm_toolbar{position:relative;width:100%;height:30px;box-shadow:0 1px 0 rgba(255,255,255,0.6);}
+.comm_toolbar .comm_tool{position:relative;height:30px;background: url(bg_sprites.png)/*tpa=http://www.wehaha.com/zb_users/plugin/lanyecommpost/images/bg_sprites.png*/ 0 -60px repeat-x;border:1px solid #ccc;border-top:0;}
+.comm_toolbar .comm_tool i{line-height:30px;}
+.comm_tool .tool_bq,.comm_tool .tool_bold,.comm_tool .tool_qiand,.comm_tool .tool_code{cursor:pointer;float:left;height:30px;line-height:30px;border-right:1px solid #ccc;text-align:center;font-size: 18px;padding:0 20px;background-color: #e6e6e6;background-image:linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));background-image:-webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);text-shadow:0 1px 0 #fff;color:#555;}
+.comm_tool .tool_bq:hover,.comm_tool .tool_bold:hover,.comm_tool .tool_qiand:hover,.comm_tool .tool_code:hover{background-image:linear-gradient(#E8E7E7, #E7E5E5 25%, #FDFDFD);color:#8aa653;}
+.comm_toolbar .comm_tool .comm_tijiao{display:block !important;cursor:pointer;position:absolute;right:0;top:0;height:30px;width:100px;text-align:center;
+text-shadow:0 1px 0 #fff;color:#555;line-height:30px;font-size:14px;font-weight:bold;border-left:1px solid #ccc;background-color: #e6e6e6;background-image:linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));background-image:-webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);}
+.comm_toolbar .comm_tool .comm_tijiao:hover{background-image:linear-gradient(#E8E7E7, #E7E5E5 25%, #FDFDFD);}
+.comm_toolbar .comm_tool .comm_tijiao input[type="submit"]{cursor:pointer;text-shadow:0 1px 0 #fff;color:#555;font-size:14px;font-weight:bold;background:none; outline:none;border:0;line-height:28px;}
+.comm_toolbar .comm_tool .cancel-reply{cursor:pointer;position:absolute;right:101px;top:0;height:30px;width:100px;text-align:center;
+text-shadow:0 1px 0 #fff;color:#555;line-height:30px;font-size:14px;font-weight:bold;border-left:1px solid #ccc;background-color: #e6e6e6;background-image:linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));background-image:-webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);}
+.comm_toolbar .comm_tool .cancel-reply:hover{background-image:linear-gradient(#E8E7E7, #E7E5E5 25%, #FDFDFD);}
+.comm_toolbar .comm_tool .cancel-reply a{color:#555;}
+.comm_toolbar .comm_tool .cancel-reply a:hover{ text-decoration:none;}
+#divCommentPost .comm_infobox{z-index:9999;display:none;position:absolute;width:325px;background:#fff;top:0;left:0;right:0;margin:0 auto;border:1px solid #ccc;border-radius:4px;box-shadow:inset 0 1px 1px #fff,0 2px 6px rgba(0,0,0,0.4);padding:20px;}
+.comm_infobox input[type="submit"]{color:#fff !important;height:auto;box-shadow: 0 0 4px 1px rgba(0,150,0,0.3);border-radius: 4px;background:#5cb85c !important;padding:10px !important;font-size:14px;font-weight:100;float:left;margin:10px 10px 0 0 !important;font-family: microsoft yahei; cursor:pointer;background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size: 40px 40px;}
+.comm_infobox .comm_rest{color:#fff;height:auto;box-shadow: 0 0 4px 1px rgba(0,150,0,0.3);border-radius: 4px;background:#00aff0;color:#fff;padding:10px;font-size:14px;font-weight:100;float:left;margin:10px 10px 0 0;font-family: microsoft yahei; cursor:pointer;background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size: 40px 40px;}
+.comm_infobox .comm_close{box-shadow: 0 0 4px 1px rgba(0,150,0,0.3);border-radius: 4px;background:#f85d00;color:#fff;padding:10px;font-size:14px;font-weight:100;float:left;margin:10px 0 0; cursor:pointer;background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size: 40px 40px;}
+.comm_infobox input[type="submit"]:hover,.comm_infobox .comm_close:hover,.comm_infobox .comm_rest{background:#00aff0;cursor:pointer;background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);background-size:30px 30px;}
+.comm_infobox input[type="text"]{width:234px;}
+.comm_infobox p{float:left;width:300px;padding-bottom:10px !important;}
+.comm_infobox label{float:left;font-size:18px;}
+.comm_infobox input{float:left;border:1px solid #ccc;height:32px;padding:0 5px; outline:none;color:#999;}
+.comm_infobox input:focus{border:1px solid #00aff0;color:#333}
+.comm_infobox img{margin-left:10px;background:#F0E7E7;padding:2px;}
+.comm_infobox input[name="imgcode"]{width:78px;}
+.smile{padding:12px;}
+.smile img{width:22px;height:22px;padding:2px;border:1px solid #f6f6f6;margin:0 !important;}
+.smile img:hover{border:1px solid #00ccff;}
+.smile .arrow{background:url(bg_msg2.gif)/*tpa=http://www.wehaha.com/zb_users/plugin/lanyecommpost/images/bg_msg2.gif*/ -13px -9px no-repeat; width:6px; height:11px; overflow:hidden;position:absolute; left:-6px; top:85px}
+.smilebg{width:217px;position:absolute;z-index:999;height:185px;display:none;background:#fff;border:solid #ddd 1px;border-radius:2px;box-shadow:0 0 10px #f1f1f1;margin:-76px 0 0 45px;line-height:20px;}
+.comm_toolbar .comm_tool .comm_notijiao{display:block !important;cursor:pointer;position:absolute;right:0;top:0;height:30px;width:100px;text-align:center;
+text-shadow:0 1px 0 #fff;color:#555;line-height:30px;font-size:14px;font-weight:bold;border-left:1px solid #ccc;background-color: #e6e6e6;background-image:linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));background-image:-webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);background-image:-ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);}
+.comm_toolbar .comm_tool .comm_notijiao:hover{background-image:linear-gradient(#E8E7E7, #E7E5E5 25%, #FDFDFD);}
+.comm_toolbar .comm_tool .comm_notijiao input[type="submit"]{cursor:pointer;text-shadow:0 1px 0 #fff;color:#555;font-size:14px;font-weight:bold;background:none; outline:none;border:0;line-height:28px;}
+.comm_code{position:relative;overflow:auto;margin:10px 0;padding:10px 15px;width:auto;border:1px solid #f2f2f2;border-left:4px solid #c00;background:#fafafa;color:#555;text-align:left;word-wrap:break-word;margin:5px 0 !important;font:400 12px/20px '宋体' !important;border-left:4px solid #A59A9A !important;}
+@media screen and (max-width: 480px){
+.tool_img,.tool_link,.tool_code,.tool_bold{display:none !important}
+#divCommentPost .comm_infobox{padding:10px !important}
+.comm_infobox input[type="text"]{width:210px}
+#divCommentPost .comm_infobox{width:280px}
+}
